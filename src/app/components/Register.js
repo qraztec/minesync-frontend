@@ -66,7 +66,7 @@ export default function Register({ onClose, onRegister }) {
     setRegisterError(null); // Clear previous errors
 
     try {
-      const response = await fetch('http://localhost:8000/register', {
+      const response = await fetch('https://hobbysync-api.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
